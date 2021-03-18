@@ -1,6 +1,5 @@
 const axios = require("axios");
 
-const SCKEY = process.env.SCKEY;
 const pushplusKey = process.env.PUSH_PLUS;
 axios.defaults.headers.common.cookie = process.env.COOKIE;
 
@@ -36,7 +35,7 @@ const GLaDOSCheckIn = async () => {
     const checkInMessage = (await checkIn())?.data?.message;
     const leftDays = parseInt((await status())?.data?.data?.leftDays);
     console.log(leftDays, checkInMessage);
-    if (SCKEY) {
+    if (pushplusKey) {
         server(checkInMessage, leftDays);
     }
 }
