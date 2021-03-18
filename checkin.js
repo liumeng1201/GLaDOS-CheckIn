@@ -1,6 +1,7 @@
 const axios = require("axios");
 
 const SCKEY = process.env.SCKEY;
+const pushplusKey = process.env.PUSH_PLUS;
 axios.defaults.headers.common.cookie = process.env.COOKIE;
 
 const checkIn = async () => {
@@ -23,9 +24,10 @@ const status = async () => {
 const server = (checkInMessage, leftDays) => {
     return axios({
         method: 'get',
-        url: `https://sc.ftqq.com/${SCKEY}.send`,
+        //url: `https://sc.ftqq.com/${SCKEY}.send`,
+        url: `http://www.pushplus.plus/send?token=${pushplusKey}&title=GLaDOS_checkin`,
         params: {
-            text: `${leftDays}天后到期，${checkInMessage}`
+            content: `${leftDays}天后到期，${checkInMessage}`
         }
     })
 }
