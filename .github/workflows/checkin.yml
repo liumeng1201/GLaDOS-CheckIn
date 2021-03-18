@@ -25,3 +25,4 @@ jobs:
         env:
           SCKEY: ${{ secrets.SCKEY }}
           COOKIE: ${{ secrets.COOKIE }}
+          PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
