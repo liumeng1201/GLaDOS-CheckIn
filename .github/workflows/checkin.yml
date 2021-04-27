@@ -23,15 +23,15 @@ jobs:
       - name: CheckIn
         run: node checkin.js
         env:
-          COOKIE: ${{ secrets.COOKIE }}
+          COOKIE: ${{ secrets.COOKIE2 }}
           PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
       - name: CheckIn2
         run: node checkin.js
         env:
-          COOKIE: ${{ secrets.COOKIE2 }}
+          COOKIE: ${{ secrets.COOKIE_TMP1 }}
           PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
       - name: CheckInTmp
         run: node checkin.js
         env:
-          COOKIE: ${{ secrets.COOKIE_TMP1 }}
+          COOKIE: ${{ secrets.COOKIE_TMP2 }}
           PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
