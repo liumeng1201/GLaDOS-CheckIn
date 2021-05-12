@@ -24,24 +24,34 @@ jobs:
         run: node checkin.js
         env:
           COOKIE: ${{ secrets.COOKIE2 }}
-          PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
+          ##PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
       - name: CheckInTmp1
         run: node checkin.js
         env:
           COOKIE: ${{ secrets.COOKIE_TMP1 }}
-          PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
+          ##PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
       - name: CheckInTmp2
         run: node checkin.js
         env:
           COOKIE: ${{ secrets.COOKIE_TMP2 }}
-          PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
+          ##PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
       - name: CheckInTmp3
         run: node checkin.js
         env:
           COOKIE: ${{ secrets.COOKIE_TMP3 }}
-          PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
+          ##PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
       - name: CheckInTmp4
         run: node checkin.js
         env:
           COOKIE: ${{ secrets.COOKIE_TMP4 }}
-          PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
+          ##PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
+      - name: CheckInTmp5
+        run: node checkin.js
+        env:
+          COOKIE: ${{ secrets.COOKIE_TMP5 }}
+          ##PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
+      - name: CheckInTmp6
+        run: node checkin.js
+        env:
+          COOKIE: ${{ secrets.COOKIE_TMP6 }}
+          ##PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
