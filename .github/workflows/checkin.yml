@@ -25,18 +25,23 @@ jobs:
         env:
           COOKIE: ${{ secrets.COOKIE2 }}
           PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
-      - name: CheckIn2
+      - name: CheckInTmp1
         run: node checkin.js
         env:
           COOKIE: ${{ secrets.COOKIE_TMP1 }}
           PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
-      - name: CheckInTmp
+      - name: CheckInTmp2
         run: node checkin.js
         env:
           COOKIE: ${{ secrets.COOKIE_TMP2 }}
           PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
-      - name: CheckInTmp
+      - name: CheckInTmp3
         run: node checkin.js
         env:
           COOKIE: ${{ secrets.COOKIE_TMP3 }}
+          PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
+      - name: CheckInTmp4
+        run: node checkin.js
+        env:
+          COOKIE: ${{ secrets.COOKIE_TMP4 }}
           PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
