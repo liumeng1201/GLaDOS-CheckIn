@@ -55,3 +55,19 @@ jobs:
         env:
           COOKIE: ${{ secrets.COOKIE_TMP6 }}
           ##PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
+      - name: CheckInTmp7
+        run: node checkin.js
+        env:
+          COOKIE: ${{ secrets.COOKIE_TMP7 }}
+          ##PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
+      - name: CheckInTmp8
+        run: node checkin.js
+        env:
+          COOKIE: ${{ secrets.COOKIE_TMP8 }}
+          ##PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
+      - name: CheckInTmp9
+        run: node checkin.js
+        env:
+          COOKIE: ${{ secrets.COOKIE_TMP9 }}
+          ##PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
+          
