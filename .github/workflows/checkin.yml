@@ -20,26 +20,6 @@ jobs:
           node-version: '14.x'
       - name: install axios
         run: npm install axios
-      - name: CheckIn
-        run: node checkin.js
-        env:
-          COOKIE: ${{ secrets.COOKIE2 }}
-          ##PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
-      - name: CheckInTmp1
-        run: node checkin.js
-        env:
-          COOKIE: ${{ secrets.COOKIE_TMP1 }}
-          ##PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
-      - name: CheckInTmp2
-        run: node checkin.js
-        env:
-          COOKIE: ${{ secrets.COOKIE_TMP2 }}
-          ##PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
-      - name: CheckInTmp3
-        run: node checkin.js
-        env:
-          COOKIE: ${{ secrets.COOKIE_TMP3 }}
-          ##PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
       - name: CheckInTmp4
         run: node checkin.js
         env:
@@ -49,25 +29,20 @@ jobs:
         run: node checkin.js
         env:
           COOKIE: ${{ secrets.COOKIE_TMP5 }}
-          ##PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
       - name: CheckInTmp6
         run: node checkin.js
         env:
           COOKIE: ${{ secrets.COOKIE_TMP6 }}
-          ##PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
       - name: CheckInTmp7
         run: node checkin.js
         env:
           COOKIE: ${{ secrets.COOKIE_TMP7 }}
-          ##PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
       - name: CheckInTmp8
         run: node checkin.js
         env:
           COOKIE: ${{ secrets.COOKIE_TMP8 }}
-          ##PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
       - name: CheckInTmp9
         run: node checkin.js
         env:
           COOKIE: ${{ secrets.COOKIE_TMP9 }}
-          ##PUSH_PLUS: ${{ secrets.PUSH_PLUS }}
           
